@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function Home() {
   const [taskCount, setTaskCount] = useState(0);
   const [memoryCount, setMemoryCount] = useState(0);
-  const [teamCount, setTeamCount] = useState(5);
+  const [teamCount] = useState(5);
   const [recentActivity, setRecentActivity] = useState<{time: string, action: string}[]>([]);
 
   useEffect(() => {

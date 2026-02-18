@@ -59,7 +59,7 @@ export default function CalendarPage() {
     setEvents([...events, newEvent]);
   };
 
-  const updateEvent = (id: string, field: string, value: any) => {
+  const updateEvent = (id: string, field: string, value: string) => {
     setEvents(events.map(e => e.id === id ? { ...e, [field]: value } : e));
   };
 

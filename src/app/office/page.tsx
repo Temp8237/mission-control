@@ -33,7 +33,7 @@ export default function OfficePage() {
     localStorage.setItem('mc-office', JSON.stringify(workspaces));
   }, [workspaces]);
 
-  const updateWorkspace = (id: string, field: string, value: any) => {
+  const updateWorkspace = (id: string, field: string, value: string) => {
     setWorkspaces(workspaces.map(w => w.id === id ? { ...w, [field]: value } : w));
   };
 
