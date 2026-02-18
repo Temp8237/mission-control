@@ -53,7 +53,7 @@ export default function TeamPage() {
     setTeam(team.filter(a => a.id !== id));
   };
 
-  const roles = [...new Set(team.map(t => t.role))];
+  const roles = Array.from(new Set(team.map(t => t.role)));
 
   return (
     <div className="space-y-6">
